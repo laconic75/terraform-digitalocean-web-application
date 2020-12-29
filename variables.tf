@@ -3,22 +3,22 @@ variable "image_name" {
 }
 
 variable "region" {
- type = string
- default = "nyc1"
+  type    = string
+  default = "nyc1"
 }
 
 variable "droplet_name" {
-  type = string
+  type    = string
   default = "application"
 }
 
 variable "droplet_size" {
-  type = string
+  type    = string
   default = "s-1vcpu-1gb"
 }
 
 variable "private_networking" {
-  type = bool
+  type    = bool
   default = true
 }
 
@@ -28,4 +28,4 @@ variable "ssh_keys" {
 
 variable "ssh_source_addresses" {
   type = list(string)
-} 
+}
